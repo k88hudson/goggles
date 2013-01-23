@@ -10,7 +10,7 @@ currenturlel.innerHTML = window.location.href;
 testdiv.addEventListener( "click", function( e ) {
   e.preventDefault();
   xgcontainer.classList.toggle( "collapsed" );
-  input.value = this.innerText;
+  input.value = this.innerHTML;
 }, false );
 
 input.addEventListener( "keyup", function(e) {
