@@ -15,6 +15,7 @@ body {
   background: #f4f5f5;
   color: #555;
   -webkit-transition: bottom 0.1s ease-in;
+  -moz-transition: bottom 0.1s ease-in;
 }
 .xg-container.collapsed {
   bottom: -245px;
