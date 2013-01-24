@@ -9,7 +9,7 @@ var hrefinput = document.querySelector( "[data-tab=href]" );
 var treetabs = document.querySelector( ".xg-tree" );
 var tabcontainer = document.querySelector( ".tab-container" );
 
-currenturlel.innerHTML = window.location.href;
+currenturlel.innerHTML = window.location.host;
 
 testdiv.addEventListener( "click", function( e ) {
   e.preventDefault();
