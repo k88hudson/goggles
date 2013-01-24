@@ -1,5 +1,7 @@
 body {
   font-family: "Open sans", Helvetica, sans-serif;
+  width: 600px;
+  margin: 0 auto;
 }
 .test-div:hover,
 .test-div.xg-editing {
@@ -22,6 +24,14 @@ body {
 }
 .xg-container.collapsed {
   bottom: -245px;
+}
+.xg-toggle-button {
+  background: url(https://webmaker.org/media/img/tools/goggles-icon.png) no-repeat;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
 }
 .xg-sidebar-l {
   width: 230px;

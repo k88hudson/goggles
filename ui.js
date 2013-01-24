@@ -3,6 +3,7 @@ var currenturlel = document.querySelector( ".xg-current-url" );
 var testdiv = document.querySelector( ".test-div" );
 
 var xgcontainer = document.querySelector( ".xg-container" );
+var toggler = document.querySelector( ".xg-toggle-button" );
 var textinput = document.querySelector( "[data-tab=text]" );
 var hrefinput = document.querySelector( "[data-tab=href]" );
 
@@ -11,13 +12,16 @@ var tabcontainer = document.querySelector( ".tab-container" );
 
 currenturlel.innerHTML = window.location.host;
 
-testdiv.addEventListener( "click", function( e ) {
+function showGoggles( e ) {
   e.preventDefault();
   xgcontainer.classList.toggle( "collapsed" );
   testdiv.classList.toggle( "xg-editing" );
-  textinput.value = this.innerHTML;
-  hrefinput.value = this.href;
-}, false );
+  textinput.value = testdiv.innerHTML;
+  hrefinput.value = testdiv.href;
+}
+
+testdiv.addEventListener( "click", showGoggles, false );
+toggler.addEventListener( "click", showGoggles, false );
 
 textinput.addEventListener( "keyup", function(e) {
   testdiv.innerHTML = this.value;
