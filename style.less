@@ -2,6 +2,15 @@
 @blue: #F172AC;
 @grey: #BDBDBD;
 
+.clearfix() {
+  &:after {
+    /* Clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 body {
   font-family: "Open sans", Helvetica, sans-serif;
 }
@@ -10,6 +19,9 @@ body {
   &:hover,
   &.xg-editing {
     box-shadow: 0 0 0 2px @blue;
+  }
+  &.xg-focus {
+    box-shadow: 0 0 0 10px @blue;
   }
 }
 
@@ -82,6 +94,8 @@ body {
   left: 230px;
   top: 0;
   .xg-tree {
+    height: 32px;
+    display: block;
     font-size: 12px;
     position: relative;
     top: 1px;
@@ -126,6 +140,15 @@ body {
     &:focus {
       outline: none;
       border-color: @blue;
+    }
+  }
+}
+
+.tab-container {
+  [data-tab] {
+    display: none;
+    &[data-selected] {
+      display: block;
     }
   }
 }

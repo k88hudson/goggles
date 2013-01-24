@@ -5,6 +5,9 @@ body {
 .test-div.xg-editing {
   box-shadow: 0 0 0 2px #f172ac;
 }
+.test-div.xg-focus {
+  box-shadow: 0 0 0 10px #f172ac;
+}
 .xg-container {
   position: fixed;
   bottom: 0;
@@ -69,6 +72,8 @@ body {
   top: 0;
 }
 .xg-stage .xg-tree {
+  height: 32px;
+  display: block;
   font-size: 12px;
   position: relative;
   top: 1px;
@@ -114,6 +119,12 @@ body {
 .xg-stage textarea:focus {
   outline: none;
   border-color: #f172ac;
+}
+.tab-container [data-tab] {
+  display: none;
+}
+.tab-container [data-tab][data-selected] {
+  display: block;
 }
 fieldset {
   display: block;

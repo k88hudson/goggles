@@ -10,7 +10,7 @@
   <header>
     <h1>A page</h1>
   </header>
-  <p><a href="#test" class="test-div">Test me</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  <p><a href="http://www.google.com" class="test-div">Test me</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -27,11 +27,14 @@
       <fieldset>
         <div class="xg-tree">
           <span data-node>a</span>
-          <span data-selected>text</span>
-          <span>href</span>
+          <span data-value="href">href</span>
+          <span data-selected data-value="text">text</span>
         </div>
-        <textarea>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</textarea>
-        <p class="fl-right"><a class="btn">Apply</a></p>
+        <div class="tab-container">
+          <textarea data-tab="href">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</textarea>
+          <textarea data-selected data-tab="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</textarea>
+        </div>
+        <!--<p class="fl-right"><a class="btn">Apply</a></p>-->
     </div>
     <div class="xg-sidebar-r">
       <fieldset>
